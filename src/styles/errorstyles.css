@@ -1,0 +1,12 @@
+.error-page-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-page-container div h1, .error-page-container div h3, .error-page-container div p {
+    color: black;
+    padding: 10px 0;
+}

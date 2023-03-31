@@ -1,0 +1,56 @@
+.menu {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container {
+    /* border: 1px solid white; */
+  height: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-link img {
+  width: 107.93px;
+  height: 60px;
+}
+
+.menu-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-options div {
+    /* border: 1px solid #fff; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-creator {
+    border: 1px solid #fff;
+}
+
+.menu-options div:last-child {
+    background-color: #0d75f0;
+}
+
+
+.menu-options div a {
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
+    /* color: red; */
+}
+

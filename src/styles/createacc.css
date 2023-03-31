@@ -1,0 +1,139 @@
+.accounts-creation-page {
+  padding-top: 100px;
+}
+
+.accounts-creation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.accounts-creation-side1 {
+  background: linear-gradient(
+      0deg,
+      rgba(13, 117, 240, 0.2),
+      rgba(13, 117, 240, 0.2)
+    ),
+    url("../assets/signupbg.png");
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  width: 50%;
+}
+.accounts-creation-side2 {
+  padding: 40px 0;
+  height: 900px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-logo-container {
+  width: 100%;
+  height: 64.67px;
+  display: flex;
+  justify-content: center;
+}
+.img-logo-container img {
+  width: 100px;
+  height: 64.67px;
+  margin: 0 auto;
+}
+
+.accounts-creation-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accounts-creation-form-heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  padding: 30px 0;
+}
+
+label {
+  width: 80px;
+  height: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+
+form input {
+  padding: 10px;
+  margin: 0 0 20px;
+  width: 100%;
+  border: 1px solid #828282;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #393636;
+}
+
+.accounts-creation-form-heading span,
+.sign-in-option span,
+form span {
+  color: #393636;
+}
+
+form span a,
+.sign-in-option span a span {
+  color: #0d75f0;
+}
+
+.sign-in-option {
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.terms {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.create-acc {
+  width: 100%;
+  color: #fff;
+  background-color: #0d75f0;
+  border: none;
+  padding: 13px 16px;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 48px 0 20px;
+  cursor: pointer;
+}
+
+/* STYLING PECULIAR TO SIGN-IN PAGE */
+
+.password-resetter {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.password-resetter a span{
+  color: #0d75f0;
+}

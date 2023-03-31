@@ -1,0 +1,141 @@
+.sell-page-container {
+  padding: 100px 0;
+}
+
+.sell-banner-content-wrapper {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/sellpagebanner.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sell-banner-content {
+    /* border: 1px solid black; */
+    width: 100%
+}
+
+.sell-banner-content div:first-child {
+  /* border: 1px solid white; */
+  font-size: 40px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  width: 674px;
+  margin: 0 auto;
+}
+.sell-banner-content div:last-child {
+  /* border: 1px solid red; */
+  width: 605px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sell-options-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.the-big-question {
+  padding: 30px 0;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.the-big-question span {
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.sell-list-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+}
+
+.sell-option-link {
+  width: 320px;
+  height: 279px;
+  background: #ffffff;
+  border: 1px solid #dadada;
+}
+.sell-option-link-container {
+  /* border: 1px solid red; */
+  width: 320px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.land-sell-option {
+  background-image: url("../assets/mono-land.png");
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  width: 300px;
+  /* margin: 10px auto; */
+  transition: all 500ms ease;
+  /* border: 1px solid black; */
+}
+.sell-option-link:hover .land-sell-option {
+  background-image: url("../assets/coloured-land.png");
+  margin: auto;
+  width: 320px;
+  height: 220px;
+}
+
+.house-sell-option {
+  background-image: url("../assets/mono-house.png");
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  width: 300px;
+  /* margin: 10px auto; */
+  transition: all 500ms ease;
+  /* border: 1px solid black; */
+}
+
+.sell-option-link:hover .house-sell-option {
+  background-image: url("../assets/coloured-house.png");
+  margin: auto;
+  width: 320px;
+  height: 220px;
+}
+
+.sell-option-text {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.sell-option-text span {
+  color: #666666;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  width: 56px;
+  height: 29px;
+  /* border: 1px solid green; */
+}
