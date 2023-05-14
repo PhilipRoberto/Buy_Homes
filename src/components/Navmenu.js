@@ -10,7 +10,7 @@ import "../styles/navmenu.css";
 
 
 
-export default function Navmenu () {
+export default function Navmenu() {
     return (
         <div className="menu menu-container">
             <nav className="nav nav-container">
@@ -20,11 +20,23 @@ export default function Navmenu () {
                     </Link>
                 </div>
                 <div className="menu-options">
+                    <div className="about-link-container">
+                        <Link to="/about" className="about-link">
+                            <span>About</span>
+                        </Link>
+                    </div>
+                    <div className="contact-link-container">
+                        <Link to="/contact" className="contact-link">
+                            <span>Contact</span>
+                        </Link>
+                    </div>
                     <div className="option-sell-container sell">
                         <Link to="/sell">
                             <span>Sell property</span>
                         </Link>
                     </div>
+                </div>
+                <div className="account-options signin-signup-container">
                     <div className="account-creator">
                         <Link to="/create-account">
                             <span>Create account</span>

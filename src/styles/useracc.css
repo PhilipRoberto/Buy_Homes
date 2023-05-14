@@ -1,0 +1,101 @@
+.craForm {
+    margin-top: 100px;
+}
+.xyz {
+    display: flex;
+}
+.useracc-heading {
+    width: max-content;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #393636;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-image {
+    background: url("../assets/signupbg.png");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 982px;
+}
+.sup-form-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+.sup-form label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+}
+.label-terms {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #393636;
+}
+.label-terms-link {
+    color: #0D75F0;
+}
+.password-reset {
+    margin: 10px 0 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+.password-reset-link {
+    color: #0D75F0;
+}
+.useracc-txt-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #393636;
+    padding: 16px;
+    gap: 10px;
+    width: 400px;
+    height: 51px;
+    border: 1px solid #7D7D7D;
+    border-radius: 8px;
+    margin: 5px auto 20px;
+}
+.useracc-check-input {
+    margin: 10px auto 30px;
+}
+.useracc-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 16px;
+    gap: 10px;
+    width: 400px;
+    height: 50px;
+    background: #0D75F0;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24p;
+    margin: 0 auto 20px;
+}
+.useracc-que {
+    margin: auto;
+    width: 340px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #393636;
+}
+.useracc-que a {
+    color: #0D75F0;
+}

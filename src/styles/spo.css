@@ -1,0 +1,163 @@
+.spo-main {
+    margin-top: 100px;
+}
+
+.spofc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.spo-form label, .spo-form input, .spo-form select, .spo-form select option, .radio-que {
+    color: black;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    height: 19px;
+    width: 94px;
+}
+.txt-input, .select-input {
+    width: 400px;
+    height: 60px;
+    padding: 16px;
+    border: 1px solid #7d7d7d;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #393636;
+    margin-bottom: 26px;
+}
+.radio-input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.location-input {
+    margin: 0 0 1px;
+}
+.l-input-last {
+    margin-bottom: 26px;
+}
+.l-input-small {
+    height: 39px;
+}
+textarea {
+    max-width: 400px;
+    max-height: 134px;
+    min-width: 400px;
+    min-height: 134px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #393636;
+    padding: 16px;
+    margin-bottom: 40px;
+}
+.msfd-container {
+    width: 400px;
+    height: 53px;
+}
+.msfd {
+    color: black;
+}
+.msfd-link {
+    color: blue;
+}
+.msfd, .msfd-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.cmbk {
+    font-size: 12px;
+    color: black;
+}
+.proceed-btn-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.submit-btn {
+    width: 400px;
+    height: 52px;
+    padding: 14px 12px;
+    background: #0D75F0;
+    border-radius: 8px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+.confirmation-container {
+    padding: 60px 0 100px;
+}
+.confirm-mssg-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirmation-heading {
+    padding: 20px 0 10px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #393636;
+    width: max-content;
+}
+.confirmation-message {
+    margin: auto;
+    width: 603px;
+    height: 87px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #828282;
+}
+.action-links-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.action-to-homepage, .action-to-sell-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 12px;
+    gap: 10px;
+    width: 400px;
+    height: 52px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    transition: all 700ms ease;
+}
+.action-to-homepage {
+    background-color: #0D75F0;
+    color: #FFFFFF;
+}
+/* .action-to-homepage:hover {
+    
+} */
+.action-to-sell-page {
+    color: #333333;
+    border: 1px solid #666666;    
+}
+/* .action-to-sell-page:hover {
+    
+} */

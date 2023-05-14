@@ -1,62 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Import styles....
-import "../styles/createacc.css";
+// import styles....
+import "../styles/useracc.css";
 
 
-// Import assets...
-import whitelogo from "../assets/buyhomesngblack.png";
+// import components....
+// import Footer from "../components/footer";
+import Input from "../components/Input";
 
-function AccountCreationForm () {
-    const acceptedTermsandConditions = "I have read and accepted the Terms and conditions";
+
+export default function CreateAcc() {
     return (
-        <div className="acc-creation-form">
-            <form>
-                <label for="fname">First name</label><br />
-                <input type="text" placeholder="First name" id="fname" /><br />
-                <label for="lname">Last name</label><br />
-                <input type="text" placeholder="Last name" id="lname" /><br />
-                <label for="agency">Real Estate Agency</label><br />
-                <input type="text" placeholder="Real Estate Agency" id="agency" /><br />
-                <label for="email">Email address</label><br />
-                <input type="email" placeholder="Email address" id="email" /><br />
-                <label for="password">Password</label><br />
-                <input type="password" placeholder="Password" id="password" /><br />
-                <input type="checkbox" value={acceptedTermsandConditions} />
-                <span className="terms">I have read and accept the <Link to="/terms-and-conditions" className="terms">Terms &amp; Conditions</Link></span><br />
-                <Link to="">
-                    <button type="submit" value="Create account" className="create-acc">Create account</button>
-                </Link>
-            </form>
-        </div>
-    )
-}
-
-export default function CreateAcc () {
-    return (
-        <div className="accounts-creation-page">
-            <div className="accounts-creation-container">
-                <div className="accounts-creation-side1"></div>
-                <div className="accounts-creation-side2">
-                    <div className="accounts-creation-side2-contanier">
-                        <div className="img-logo-container">
-                            <img src={whitelogo} alt="buyhomesng-logo" />
-                        </div>
-                        <div className="accounts-creation-form">
-                            <div>
-                                <div className="accounts-creation-form-heading">
-                                    <span>Create Account</span>
-                                </div>
-                                <AccountCreationForm />
-                                <div className="sign-in-option">
-                                    <span>Already have an account? <Link to="/login"><span>Sign in</span></Link></span>
-                                </div>
-                            </div>
-                        </div>
+        <div className="craForm craForm-container">
+            <div className="xyz">
+                <div className="bg-image"></div>
+                <div className="sup-form-container">
+                    <div className="form-cont">
+                        <h1 className="useracc-heading">Create Account</h1>
+                        <form className="sup-form">
+                            <label for="fname">First name</label><br />
+                            <Input id="fname" type="text" className="useracc-txt-input" placeholder="Enter your first name" /><br />
+                            <label for="lname">Last name</label><br />
+                            <Input type="text" id="lname" className="useracc-txt-input" placeholder="Enter your last name" /><br />
+                            <label for="agent">Real Estate Agency</label><br />
+                            <Input type="text" id="agent" className="useracc-txt-input" placeholder="Enter your real estate agency" /><br />
+                            <label for="email">Email address</label><br />
+                            <Input type="text" id="email" className="useracc-txt-input" placeholder="Enter your email address" /><br />
+                            <label for="code">Password</label><br />
+                            <Input type="password" id="code" className="useracc-txt-input" placeholder="Create new password" /><br />
+                            <Input type="checkbox" id="terms" className="useracc-check-input" value="agree terms" /><label for="terms" className="label-terms">   I have read and accept the <Link to="/terms_and_condition" className="label-terms-link">Terms and Condition</Link></label><br />
+                            <button className="useracc-submit">Create account</button>
+                        </form>
+                        <p className="useracc-que">Already have and account? <Link to="/login">Sign in</Link></p>
                     </div>
                 </div>
             </div>
+            {/* <Footer /> */}
         </div>
     )
 }

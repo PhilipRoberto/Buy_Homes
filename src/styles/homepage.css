@@ -1,80 +1,43 @@
-.home-container {
+.hpc {
     padding: 100px 0 0;
 }
 
-.home-section-one {
-    background-image: url(../assets/house.png);
-    background-size: cover;
+/* home banner styles */
+.homepage-banner-image {
+    background-image: url('../assets/imagebanner.png');
     background-position: center;
+    background-size: cover;
     height: 400px;
-    top: 100px;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.home-section-one-main-flex {
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
 
-.home-searchbar-container input {
+}
+.search-bar {
     width: 500px;
     height: 50px;
     padding: 10px 20px;
     border: none;
 }
 
-.home-searchfilter-container button {
-    width: 152px;
-    height: 50px;
-    background-color: black;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.home-searchbtn-container button {
-    height: 50px;
-    border: none;
-    padding: 10px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.home-searchbtn-container button img {
-    width: 15.99px;
-    height: 15.99px;
-}
-
-button {
-    cursor: pointer;
-}
-
-.vector {
-    width: 16px;
-    height: 14px;
-}
-
 /* THE HOMES STYLES... */
 .home-section-two {
-    padding: 40px 0 400px;
+    padding: 0 0 400px;
+    /* border: 1px solid green; */
 }
-
+.section-mini-container {
+    /* border: 1px solid black; */
+    width: max-content;
+    /* margin-top: 25px; */
+}
 .home-section-two-heading {
     font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 36px;
     line-height: 48px;
-    padding: 0 0 40px;
-    width: 1200px;
-    margin: auto;
+    padding: 0 0 10px;
+    /* border: 1px solid blue; */
 }
 .home-section-two-heading span {
     color: #000000;
@@ -83,9 +46,8 @@ button {
 .home-section-display-grid {
     /* border: 1px solid black; */
     width: max-content;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 100px;
     column-gap: 40px;
 }
@@ -172,7 +134,7 @@ button {
 }
 .house-specs {
     width: max-content;
-    /* border: 1px solid blue; */
+    /* border: 1px solid blue;s */
 }
 .house-specs1, .house-specs2 {
     display: flex;
@@ -185,4 +147,112 @@ button {
     line-height: 17px;
     padding: 6px 0;
     /* border: 1px solid green; */
+}
+
+/* FILTER STYLES */
+.filter-container {
+    margin: 100px 0 0;
+    border: 1px solid #dadada;
+    width: 420px;
+    height: 1120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-marginal-container {
+    width: 380px;
+    height: 1080px;
+    /* border: 1px solid blueviolet; */
+}
+
+.filter-headers {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    height: 37px;
+}
+.filter-headers h3 {
+    color: #393636;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.filter-headers button {
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    width: 99px;
+    height: 37px;
+    color: #393636;
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.price-range-heading h3 {
+    color: #828282;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 0;
+}
+.filter-range-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+}
+.rng {
+    width: 186px;
+    height: 51px;
+    padding: 16px;
+    color: #393636;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    border: 1px solid #7d7d7d;
+    border-radius: 8px;
+}
+.filter-label {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.filter-checkbox-heading {
+    padding: 20px 0 10px;
+}
+.filter-checkbox-heading span {
+    color: #828282;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.filter-checkbox-container, .filter-toggle-btn-container {
+    padding: 5px 20px;
+    width: 100%;
+}
+.filter-checkbox-label {
+    padding-left: 16px;
+    color:#393636;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.filter-toggle-btn {
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+
+.flexy-pop {
+    border: 1px solid green;
+    padding: 40px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px
 }

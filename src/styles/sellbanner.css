@@ -1,0 +1,46 @@
+.sell-banner-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/sellpagebanner.png');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .sell-banner-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 168px;
+    width: max-content;
+  }
+  .sell-banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sbtcw div {
+    width: max-content;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .sbt-1 {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .sbtcw div:last-child {
+    margin-top: 14px;
+  }
+  .sbt-2 {
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    font-weight: 600;
+  }

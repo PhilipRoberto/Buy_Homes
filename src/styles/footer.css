@@ -1,0 +1,41 @@
+.footer-container {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+.ft-logo-container img {
+    width: 107.93px;
+    height: 60px;
+}
+
+.ft-hd {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 40px;
+}
+
+.comp-container p, .feat-cont p, .cont-container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 20px 0;
+}
+
+.soc-container {
+    display: flex;
+    gap: 20px;
+}
+.soc-container a img {
+    width: 21px;
+    height: 21px;
+}

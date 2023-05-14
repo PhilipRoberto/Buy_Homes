@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 
 // import styles...
 import "../styles/sellstyles.css";
 
-// import assets...
+// import components...
+import SellPageBanner from "../components/sellbanner";
+import Footer from "../components/footer";
 
 
 function SellOptions() {
@@ -16,26 +18,31 @@ function SellOptions() {
                     <span>What do you want to list?</span>
                 </div>
                 <div className="sell-list-options">
-                    <Link to="/sell/land" className="sell-option-link">
-                        <div className="sell-option-link-container">
-                            <div className="land-sell-option">
+                    <Link to="/sell-land" className="sell-option-link">
+                        <div>
+                            <div className="sell-option-link-container">
+                                <div className="land-sell-option">
+                                </div>
                             </div>
-                        </div>
-                        <div className="sell-option-text">
-                            <span>Land</span>
+                            <div className="sell-option-text">
+                                <span>Land</span>
+                            </div>
                         </div>
                     </Link>
-                    <Link to="/sell/house" className="sell-option-link">
-                        <div className="sell-option-link-container">
-                            <div className="house-sell-option">
+                    <Link to="/sell-building" className="sell-option-link">
+                        <div>
+                            <div className="sell-option-link-container">
+                                <div className="house-sell-option">
+                                </div>
                             </div>
-                        </div>
-                        <div className="sell-option-text">
-                            <span>House</span>
+                            <div className="sell-option-text">
+                                <span>Building</span>
+                            </div>
                         </div>
                     </Link>
                 </div>
             </div>
+            <Outlet />
         </div>
     )
 }
@@ -43,23 +50,9 @@ function SellOptions() {
 export default function SellPage() {
     return (
         <div className="sell-page-container sell">
-            <div className="sell-banner-container">
-                <div className="sell-banner-content-wrapper">
-                    <div className="sell-banner-content">
-                        <div>
-                            <span>
-                                Want to sell some property? Fill in the form below to get started
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                To sell more than one property, you need to fill in the information for each of them, one after the other.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <SellPageBanner />
             <SellOptions />
+            <Footer />
         </div>
     )
 }
