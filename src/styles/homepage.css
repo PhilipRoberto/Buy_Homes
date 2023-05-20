@@ -4,7 +4,7 @@
 
 /* home banner styles */
 .homepage-banner-image {
-    background-image: url('../assets/imagebanner.png');
+    background-image: url('../assets/house.png');
     background-position: center;
     background-size: cover;
     height: 400px;
@@ -50,6 +50,7 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 100px;
     column-gap: 40px;
+    margin-bottom: 100px;
 }
 
 .home-option-wrapper {
@@ -151,7 +152,7 @@
 
 /* FILTER STYLES */
 .filter-container {
-    margin: 100px 0 0;
+    margin-top: 58px;
     border: 1px solid #dadada;
     width: 420px;
     height: 1120px;
@@ -246,11 +247,12 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    background: none;
 }
 
 
 .flexy-pop {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     padding: 40px 0 0;
     display: flex;
     justify-content: center;

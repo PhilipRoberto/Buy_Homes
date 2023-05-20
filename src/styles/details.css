@@ -1,0 +1,209 @@
+.dp-container {
+    padding-top: 100px;
+    width: 100%;
+}
+.details-angled-banner {
+    padding: 43px;
+    height: 600px;
+    background-image: url('../assets/homes/home4.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.details-btns-container {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+}
+.nextprev-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+.dp-b2b-btn {
+    border: none;
+    background: none;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.dp-b2b-btn span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.b2b-btn {
+    width: 18px;
+    height: 18px;
+}
+.dp-btn {
+    border: none;
+    background: none;
+}
+.prev_btn, .next_btn {
+    width: 36px;
+    height: 36px;
+}
+.details-page-house-details-container {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 0;
+    margin: 0 auto 50px;
+    background: #fafafa;
+}
+.dph-headers-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: max-content;
+}
+.price-agent-container, .house-features-headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+.price-marginal-container span {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+.agent-marginal-container span {
+    color: #7b61ff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.location-header-container p {
+    color: #666666;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+}
+.house-features span {
+    color: #000000;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.user-action-marginal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: max-content;
+    height: auto;
+    gap: 20px;
+}
+.tour-phy-btn-container button, .tour-vir-btn-container button {
+    color: #333333;
+    border: 1px solid #666666;
+}
+.buy-btn-container button {
+    background: #0d75f0;
+    border: none;
+
+}
+.dp-action-btn {
+    width: 242px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+.details-split-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+.agent-contact-card-container {
+    border: 1px solid #dadada;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+    padding-bottom: 20px;
+}
+.agent-contact-mssg-container, .mssg-agent-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mssg-agent-btn-container {
+    padding: 10px 0;
+}
+.agent-contact-header {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+}
+.agent-photo-card {
+    width: 120px;;
+    height: 122px;
+    border-radius: 8px;
+}
+.agent-info-container h3 {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 5px 10px;
+}
+.agent-info-container h2 {
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 5px 10px 10px;
+}
+.mssg-agent-label {
+    color: #000000;
+    line-height: 17px;
+    font-size: 14px;
+}
+.agent-contact-mssg {
+    background: #fafafa;
+    width: 380px;
+    height: 131px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 17px;
+    color: #aaaaaa;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 0;
+    border: none;
+}
+.mssg-send-btn {
+    background: #0d75f0;
+    width: 380px;
+    height: 48px;
+    padding: 10px 12px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    border: none;    
+    border-radius: 8px;
+}

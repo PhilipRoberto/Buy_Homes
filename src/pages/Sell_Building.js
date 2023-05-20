@@ -56,9 +56,9 @@ function BsForm() {
                 </select><br />
                 <p className="radio-que">Fully furnished?</p>
                 <Input type="radio" id="yes" name="furnish" value="Yes" className="radio-input" />
-                <label for="yes">Yes</label>
+                <label for="yes" className="radio-label">Yes</label>
                 <Input type="radio" id="no" name="furnish" value="No" className="radio-input" />
-                <label for="no">No</label><br />
+                <label for="no" className="radio-label">No</label><br />
                 <label for="top">Title of Property</label><br />
                 <select id="top" className="select-input">
                     <option vlaue="top">top</option>
@@ -76,19 +76,19 @@ function BsForm() {
                 <Input type="number" id="nobth" placeholder="Number of bathrooms" className="txt-input" /><br />
                 <p className="radio-que">Newly built?</p>
                 <Input type="radio" id="yes" name="built-current" value="Yes" className="radio-input" />
-                <label for="yes">Yes</label>
+                <label for="yes" className="radio-label">Yes</label>
                 <Input type="radio" id="no" name="built-current" value="No" className="radio-input" />
-                <label for="no">No</label><br />
+                <label for="no" className="radio-label">No</label><br />
                 <p className="radio-que">Swimming pool?</p>
                 <Input type="radio" id="yes" name="pool" value="Yes" className="radio-input" />
-                <label for="yes">Yes</label>
+                <label for="yes" className="radio-label">Yes</label>
                 <Input type="radio" id="no" name="pool" value="No" className="radio-input" />
-                <label for="no">No</label><br />
+                <label for="no" className="radio-label">No</label><br />
                 <p className="radio-que">Gym?</p>
                 <Input type="radio" id="yes" name="gym" value="Yes" className="radio-input" />
-                <label for="yes">Yes</label>
+                <label for="yes" className="radio-label">Yes</label>
                 <Input type="radio" id="no" name="gym" value="No" className="radio-input" />
-                <label for="no">No</label><br />
+                <label for="no" className="radio-label">No</label><br />
                 <label for="agent">Owner/Agent name</label><br />
                 <Input type="text" id="agent" placeholder="Owner/agent name" className="txt-input" /><br />
                 <label for="images">Image(s)</label><br />

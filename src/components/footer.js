@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import majorLogo from "../assets/buyhomesngwhite.png";
 import wa from "../assets/wavector.png";
 import fb from "../assets/fbvector.png";
+import ig from "../assets/ig_logo.png";
 
 // import styles....
 import "../styles/footer.css";
@@ -33,6 +34,9 @@ export default function Footer () {
                     <div className="soc-container">
                         <Link to="">
                             <img src={wa} alt="wa-logo-link" />
+                        </Link>
+                        <Link to="">
+                            <img src={ig} alt="ig-logo-link" />
                         </Link>
                         <Link to="">
                             <img src={fb} alt="fb-logo-link" />

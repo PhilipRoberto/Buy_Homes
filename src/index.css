@@ -17,3 +17,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+input[type="checkbox"] {
+  accent-color: #000000;
+}

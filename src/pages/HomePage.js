@@ -27,7 +27,6 @@ const fPlace = `${ngn} 0.00`;
 
 
 function Properties() {
-
     return (
         <div className="flexy-pop">
             <div className="filter-container">
@@ -127,12 +126,12 @@ function Properties() {
             </div>
             <div className="home-section-two">
                 <div className="section-mini-container">
-                    <div className="home-section-two-heading">
+                    <div className="home-section-two-heading sponsored-heading">
                         <span>Sponsored</span>
                     </div>
                     <div className="home-section-display-grid">
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home5} alt="home_image" className="home-img" />
@@ -163,7 +162,7 @@ function Properties() {
                             </Link>
                         </div>
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home6} alt="home_image" className="home-img" />
@@ -196,13 +195,13 @@ function Properties() {
                     </div>
                 </div>
                 <div className="section-mini-container">
-                    <div className="home-section-two-heading">
+                    <div className="home-section-two-heading browser-heading">
                         <span>Browse available homes</span>
                     </div>
 
                     <div className="home-section-display-grid">
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home6} alt="home_image" className="home-img" />
@@ -233,7 +232,7 @@ function Properties() {
                             </Link>
                         </div>
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home1} alt="home_image" className="home-img" />
@@ -264,7 +263,7 @@ function Properties() {
                             </Link>
                         </div>
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home2} alt="home_image" className="home-img" />
@@ -295,7 +294,7 @@ function Properties() {
                             </Link>
                         </div>
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home2} alt="home_image" className="home-img" />
@@ -326,7 +325,7 @@ function Properties() {
                             </Link>
                         </div>
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home3} alt="home_image" className="home-img" />
@@ -357,7 +356,7 @@ function Properties() {
                             </Link>
                         </div>
                         <div className="home-option-wrapper">
-                            <Link to="" className="home-option-link">
+                            <Link to="/details" className="home-option-link">
                                 <div className="home-option-image-container">
                                     <div className="home-option-image">
                                         <img src={home4} alt="home_image" className="home-img" />

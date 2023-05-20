@@ -30,7 +30,7 @@ export default function Login() {
                             </p>
                             <button className="useracc-submit">Sign in</button>
                         </form>
-                        <p className="useracc-que">New memebr? <Link to="/create-account">Create account</Link></p>
+                        <p className="useracc-que">New member? <Link to="/create-account">Create account</Link></p>
                     </div>
                 </div>
             </div>
