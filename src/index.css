@@ -21,3 +21,13 @@ a {
 input[type="checkbox"] {
   accent-color: #000000;
 }
+
+.dnd {
+  color: #000000;
+  border: 2px dashed #7b61ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  max-width: 400px;
+}

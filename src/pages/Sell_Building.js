@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 
 
 // import styles....
@@ -8,34 +8,11 @@ import "../styles/spo.css";
 // import components....
 import SellPageBanner from "../components/sellbanner";
 import Footer from "../components/footer";
-import DropBox from "../components/dropZone";
-import ShowImage from "../components/ShowImage";
+import Previews from "../components/Previews"
 import Input from "../components/Input";
 import TextArea from "../components/Textarea";
 import { Link } from "react-router-dom";
 
-function DragDrop() {
-    const [images, setImages] = useState([]);
-    const onDrop = useCallback((acceptedFiles) => {
-        acceptedFiles.map((file, index) => {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                setImages((prevState) => [
-                    ...prevState,
-                    { id: index, src: e.target.result },
-                ]);
-            };
-            reader.readAsDataURL(file);
-            return file;
-        });
-    }, []);
-    return (
-        <div className="App">
-            <DropBox onDrop={onDrop} />
-            <ShowImage images={images} />
-        </div>
-    );
-}
 
 
 
@@ -50,22 +27,26 @@ function BsForm() {
                 <Input type="text" placeholder="Town/City" id="location" className="txt-input location-input l-input-small" /><br />
                 <Input type="text" placeholder="State" id="location" className="txt-input location-input l-input-last l-input-small" /><br />
                 <label for="soc">Stage of construction</label><br />
-                <select id="soc" className="select-input">
-                    <option value="Complete">Complete</option>
-                    <option value="Incomplete" selected>Incomplete</option>
-                </select><br />
+                <div className="select">
+                    <select id="soc" className="select-input">
+                        <option className="option-value" value="Complete">Complete</option>
+                        <option className="option-value" value="Incomplete" selected>Incomplete</option>
+                    </select><br />
+                </div>
                 <p className="radio-que">Fully furnished?</p>
                 <Input type="radio" id="yes" name="furnish" value="Yes" className="radio-input" />
                 <label for="yes" className="radio-label">Yes</label>
                 <Input type="radio" id="no" name="furnish" value="No" className="radio-input" />
                 <label for="no" className="radio-label">No</label><br />
                 <label for="top">Title of Property</label><br />
-                <select id="top" className="select-input">
-                    <option vlaue="top">top</option>
-                    <option vlaue="top">top</option>
-                    <option vlaue="top">top</option>
-                    <option vlaue="top">top</option>
-                </select><br />
+                <div className="select">
+                    <select id="top" className="select-input">
+                        <option className="option-value" vlaue="top">top</option>
+                        <option className="option-value" vlaue="top">top</option>
+                        <option className="option-value" vlaue="top">top</option>
+                        <option className="option-value" vlaue="top">top</option>
+                    </select><br />
+                </div>
                 <label for="nob">Number of bedrooms</label><br />
                 <Input type="number" id="nob" placeholder="NUmber of bedrooms" className="txt-input" /><br />
                 <label for="nol">Number of living rooms</label><br />
@@ -92,9 +73,9 @@ function BsForm() {
                 <label for="agent">Owner/Agent name</label><br />
                 <Input type="text" id="agent" placeholder="Owner/agent name" className="txt-input" /><br />
                 <label for="images">Image(s)</label><br />
-                <DragDrop /><br />
+                <Previews /><br />
                 <label for="vids">Videos/Virtual tours</label><br />
-                <DragDrop /><br />
+                <Previews /><br />
                 <label for="desc">Description</label><br />
                 <TextArea id="desc" placeholder="Description" /><br />
                 <label for="asp">Asking price</label><br />

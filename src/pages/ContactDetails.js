@@ -21,10 +21,10 @@ function LsForm() {
                 <label for="cea">Contact email address</label><br />
                 <Input type="email" id="cea" placeholder="Enter your email address" className="txt-input" /><br />
                 <p className="radio-que">Please select one option</p>
-                <Input type="radio" id="agn" value="Agency" className="radio-input" />
-                <label for="agn">Agency</label>
-                <Input type="radio" id="ind" value="Individual" className="radio-input" />
-                <label for="ind">Individual</label><br />
+                <Input type="radio" id="agn" name="lister" value="Agency" className="radio-input" />
+                <label className="space-label" for="agn">Agency</label>
+                <Input type="radio" id="ind" name="lister" value="Individual" className="radio-input" />
+                <label className="space-label" for="ind">Individual</label><br />
                 <label for="agnName">Agency name</label><br />
                 <Input type="text" id="agnName" placeholder="Enter agency name" className="txt-input" /><br />
                 <label for="location">Location</label><br />

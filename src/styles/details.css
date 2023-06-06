@@ -28,11 +28,15 @@
     display: flex;
     /* border: 1px solid black; */
 }
-.dp-b2b-btn span {
+.dp-b2b-btn a span {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    padding: 0 4px;
+}
+.dp-b2b-btn-link {
+    display: flex;
 }
 .b2b-btn {
     width: 18px;

@@ -128,7 +128,9 @@ const DetailsPageContainer = () => {
                     <div className="details-btns-container">
                         <div className="b2b-btn-container">
                             <button className="dp-b2b-btn">
-                                <img src={prev_btn} alt="back_to_browse_button" className="b2b-btn" /><span>Back to browse</span>
+                                <Link to="/" className="dp-b2b-btn-link">
+                                    <img src={prev_btn} alt="back_to_browse_button" className="b2b-btn" /><span>Back to browse</span>
+                                </Link>
                             </button>
                         </div>
                         <div className="nextprev-btns">

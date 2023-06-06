@@ -1,5 +1,6 @@
-import { React, useCallback, useState } from "react";
+import { React, useRef } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 // styles import....
 import "../styles/spo.css";
@@ -7,61 +8,55 @@ import "../styles/spo.css";
 // import components....
 import SellPageBanner from "../components/sellbanner";
 import Footer from "../components/footer";
-import DropBox from "../components/dropZone";
-import ShowImage from "../components/ShowImage";
+import Previews from "../components/Previews"
 import Input from "../components/Input";
 import TextArea from "../components/Textarea";
+// import ContactDetails from "../pages/ContactDetails";
+// import Confirmation from "../pages/Confirmation";
 
 
-function DragDrop() {
-    const [images, setImages] = useState([]);
-    const onDrop = useCallback((acceptedFiles) => {
-        acceptedFiles.map((file, index) => {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                setImages((prevState) => [
-                    ...prevState,
-                    { id: index, src: e.target.result },
-                ]);
-            };
-            reader.readAsDataURL(file);
-            return file;
-        });
-    }, []);
-    return (
-        <div className="App">
-            <DropBox onDrop={onDrop} />
-            <ShowImage images={images} />
-        </div>
-    );
-}
 
 function LsForm() {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_db9ie7o', 'template_lcxdjxi', form.current, 'kcnitHNmIGibFcKL3')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        window.alert("Account form submitted successfully");
+        e.target.reset();
+    };
     return (
         <div className="spofc lsfc-wrapper">
-            <form className="spo-form">
-                <label for="ls">Land size</label><br />
-                <Input type="number" id="ls" placeholder="What's your land size" className="txt-input" /><br />
-                <label for="ll">Location</label><br />
-                <Input type="text" id="ll" placeholder="Where's the location" className="txt-input" /><br />
-                <label for="top">Title of Property</label>< br />
-                <select name="top" id="top" className="select-input">
-                    <option value="top">top</option>
-                    <option value="top">top</option>
-                    <option value="top">top</option>
-                    <option value="top">top</option>
-                    <option value="top">top</option>
-                </select><br />
-                <label for="owner">Owner/Agent name</label><br />
-                <Input type="text" id="owner" placeholder="Owner/Agent name" className="txt-input" /><br />
-                <label for="l-images">Images</label><br />
-                <DragDrop /><br />
-                <label for="l-vids">Video/Virtual tour(s)</label><br />
-                <DragDrop /><br />
-                <label for="desc">Description</label><br />
-                <TextArea id="desc" placeholder="Give a description" className="txt-input" /><br />
-                <label for="asp">Asking price</label><br />
-                <Input type="number" id="asp" placeholder="Asking price" className="txt-input" /><br />
+            <form ref={form} lassName="spo-form" onSubmit={sendEmail}>
+                <label for="land_size">Land size</label><br />
+                <Input type="number" id="land_size" name="land_size" placeholder="What's your land size" className="txt-input" /><br />
+                <label for="land_location">Location</label><br />
+                <Input type="text" id="land_location" name="land_location" placeholder="Where's the location" className="txt-input" /><br />
+                <label for="title_of_property">Title of Property</label>< br />
+                <div className="select">
+                    <select name="title_of_property" id="title_of_property" className="select-input">
+                        <option className="option-value" value="top">top</option>
+                        <option className="option-value" value="bottom">bottom</option>
+                        <option className="option-value" value="left">left</option>
+                        <option className="option-value" value="right">right</option>
+                        <option className="option-value" value="center">center</option>
+                    </select><br />
+                </div>
+                <label for="land_owner">Owner/Agent name</label><br />
+                <Input type="text" id="land_owner" name="land_owner" placeholder="Owner/Agent name" className="txt-input" /><br />
+                <label for="land_images">Images</label><br />
+                <Previews /><br />
+                <label for="land_videos">Video/Virtual tour(s)</label><br />
+                <Previews /><br />
+                <label for="land_description">Description</label><br />
+                <TextArea id="land_description" name="land_description" placeholder="Give a description" className="txt-input" /><br />
+                <label for="asking_price">Asking price</label><br />
+                <Input type="number" id="asking_price" name="asking_price" placeholder="Asking price" className="txt-input" /><br />
                 <div classame="msfd-container">
                     <span className="msfd">
                         Missing field? <Link to="">

@@ -404,7 +404,6 @@ export default function HomePage() {
                 </div>
             </div>
             <Properties />
-
             <Footer />
         </div>
     )
