@@ -46,7 +46,7 @@ export default function CreateAcc() {
                             <Input type="checkbox" id="terms" name="terms" className="useracc-check-input" value="I agree to the terms and conditions" /><label for="terms" className="label-terms">   I have read and accept the <Link to="/terms_and_condition" className="label-terms-link">Terms and Condition</Link></label><br />
                             <button type="submit" className="useracc-submit">Create account</button>
                         </form>
-                        <p className="useracc-que">Already have and account? <Link to="/login">Sign in</Link></p>
+                        <p className="useracc-que">Already have an account? <Link to="/login">Sign in</Link></p>
                     </div>
                 </div>
             </div>

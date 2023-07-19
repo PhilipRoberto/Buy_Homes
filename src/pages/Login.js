@@ -17,7 +17,7 @@ export default function Login() {
                 <div className="bg-image"></div>
                 <div className="sup-form-container">
                     <div className="form-cont">
-                        <h1 className="useracc-heading">Create Account</h1>
+                        <h1 className="useracc-heading">Log in</h1>
                         <form className="sup-form">
                             <label for="email">Email address</label><br />
                             <Input type="text" id="email" className="useracc-txt-input" placeholder="Enter your email address" /><br />
