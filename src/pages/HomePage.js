@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import getSymbolFromCurrency from "currency-symbol-map";
-
 
 // import styles...
 import "../styles/homepage.css";
@@ -9,20 +7,15 @@ import "../styles/homepage.css";
 // import components....
 import Footer from "../components/footer";
 import Input from "../components/Input";
+import PropertyStocks from "../components/Stocks";
 
 
-// import assets....
-import home1 from "../assets/homes/home1.png";
-import home2 from "../assets/homes/home2.png";
-import home3 from "../assets/homes/home3.png";
-import home4 from "../assets/homes/home4.png";
-import home5 from "../assets/homes/home5.png";
-import home6 from "../assets/homes/home6.png";
+// import db....
+import { sponsoredProperties, otherProperties } from "../data/db";
 
 // globals....
 const ngn = getSymbolFromCurrency('NGN');
 const fPlace = `${ngn} 0.00`;
-
 
 
 
@@ -130,68 +123,26 @@ function Properties() {
                         <span>Sponsored</span>
                     </div>
                     <div className="home-section-display-grid">
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home5} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Ramos Reality</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home6} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Albert &amp; Wand</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
+                        {
+                            sponsoredProperties.map((property) => {
+                                return (
+                                    <PropertyStocks
+                                        id={property.sys.id}
+                                        image={property.fields.image.fields.file.url}
+                                        price={property.fields.price}
+                                        listingAgent={property.fields.listingAgent}
+                                        location={property.fields.location}
+                                        type={property.fields.type}
+                                        livingRooms={property.fields.livingrooms}
+                                        bedRooms={property.fields.bedrooms}
+                                        bathRooms={property.fields.bathRooms}
+                                        pool={property.fields.pool}
+                                        gym={property.fields.gym}
+                                        size={property.fields.size}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className="section-mini-container">
@@ -200,192 +151,26 @@ function Properties() {
                     </div>
 
                     <div className="home-section-display-grid">
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home6} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Albert &amp; Wand</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home1} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Grebes Properties</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home2} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Natty Homes</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home2} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Natty Homes</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home3} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Cardone Homes</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="home-option-wrapper">
-                            <Link to="/details" className="home-option-link">
-                                <div className="home-option-image-container">
-                                    <div className="home-option-image">
-                                        <img src={home4} alt="home_image" className="home-img" />
-                                    </div>
-                                </div>
-                                <div className="home-option-text">
-                                    <div className="home-option-text-marginal-wrapper">
-                                        <div className="price-agency-container">
-                                            <div className="house-price">{ngn}50,000,000</div>
-                                            <div className="listing-agent">Lekki Global Propeties</div>
-                                        </div>
-                                        <div className="house-location">Osapa London, Lekki, Lagos</div>
-                                        <div className="house-specs">
-                                            <div className="house-specs1">
-                                                <div>Fully-detached</div>
-                                                <div>2 Living rooms</div>
-                                                <div>4 Bedrooms</div>
-                                            </div>
-                                            <div className="house-specs2">
-                                                <div>2 Bathrooms</div>
-                                                <div>Swimmiing pool</div>
-                                                <div>Gym</div>
-                                                <div>2,000 Sqm</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
+                        {
+                            otherProperties.map((property) => {
+                                return (
+                                    <PropertyStocks
+                                        id={property.sys.id}
+                                        image={property.fields.image.fields.file.url}
+                                        price={property.fields.price}
+                                        listingAgent={property.fields.listingAgent}
+                                        location={property.fields.location}
+                                        type={property.fields.type}
+                                        livingRooms={property.fields.livingrooms}
+                                        bedRooms={property.fields.bedrooms}
+                                        bathRooms={property.fields.bathRooms}
+                                        pool={property.fields.pool}
+                                        gym={property.fields.gym}
+                                        size={property.fields.size}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
