@@ -103,3 +103,42 @@
   align-items: center;
   gap: 30px;
 }
+
+/* .fixed_img {
+  position: fixed;
+} */
+.small_screen_container {
+  transition: all 1s ease-in;
+}
+.dropdown {
+  position: absolute;
+  right: 1px;
+  top: 100px;
+  background: #000000;
+  opacity: .6;
+  transition: all .8s ease-in-out;
+  padding: 10px;
+  width: max-content;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.drop_down_menu-container {
+  line-height: 2rem;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.drop_down_user_options {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* hamburgerMenu */
+.hamburger_menu {
+  cursor: pointer;
+  transition: all 500ms ease;
+}
